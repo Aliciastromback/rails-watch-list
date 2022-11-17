@@ -1,0 +1,5 @@
+<h1><%= @list.name %></h1>
+
+<button class="btn btn-warning"><%= link_to "See Lists", lists_path %></button>
+<button class="btn btn-warning"><%= link_to "Add Bookmark", new_list_bookmark_path(@list) %></button>
+<button class="btn btn-warning"><%= link_to "See All Bookmarks", list_bookmarks_path(@list) %></button>

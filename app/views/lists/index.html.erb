@@ -1,0 +1,6 @@
+<h1>List of movie genres</h1>
+<p><% @lists.each do |list| %>
+<p><%= link_to "#{list.name}", list_path(list) %></p>
+<% end %>
+
+<button class="btn btn-info"><%= link_to "Create new", new_list_path %></button>
