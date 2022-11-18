@@ -4,7 +4,6 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -19,6 +18,13 @@
 <p><% @lists.each do |list| %>
 <p><%= link_to "#{list.name}", list_path(list) %></p>
 <% end %>
+
+<%= cl_image_tag("twlyih46ewapewpvwn48",
+      width: 400, height: 300, crop: :fill) %>
+
+<!-- for face detection -->
+<%= cl_image_tag("rgrfnprmx3pnwblyhnb0",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
 
 <button class="btn btn-info"><%= link_to "Create new", new_list_path %></button>
 </div>

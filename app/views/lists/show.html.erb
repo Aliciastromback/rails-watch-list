@@ -20,30 +20,15 @@
   </div>
 </div>
 
-<div class= "m-3">
+<%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
 
-<ul>
-      <div class="row mt-5">
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="https://image.tmdb.org/t/p/original/bQSfsZDaBWZCHI8Z2nrN1hkR6EG.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Tusk</h5>
-                <p class="card-text">When his best friend and podcast co-host goes missing in the backwoods of Canada, a young guy joins forces with his friend's girlfriend to search for him.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="https://image.tmdb.org/t/p/original/7jEAe21uzbBdb1U5ZJ5jzqm97ad.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">My Stepmother is an Alien</h5>
-                <p class="card-text">Trying to rescue her home planet from destruction, a gorgeous extraterrestrial named Celeste arrives on Earth and begins her scientific research. She woos quirky scientist Dr. Steve Mills, a widower with a young daughter. Before long, Celeste finds herself in love with Steve and her new life on Earth, where she experiences true intimacy for the first time. But when she loses sight of her mission, she begins to question where she belongs.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-    </ul>
+<div class="card-category"
+  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @list.photo.key, height: 300, crop: :fill %>')"
+>
+  Cool article
+</div>
+
+<div class= "m-3">
 
 <button class="btn btn-warning"><%= link_to "See Lists", lists_path %></button>
 <button class="btn btn-warning"><%= link_to "Add Bookmark", new_list_bookmark_path(@list) %></button>
