@@ -1,5 +1,51 @@
-<h1><%= @list.name %></h1>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon px-3">
+  <img alt="alttext" class="logo" src="/assets/film.png" width= 30px height=30px>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/lists">Home</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1508020963102-c6c723be5764?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);">
+  <div class="container">
+    <h1><%= @list.name %></h1>
+  </div>
+</div>
+
+<div class= "m-3">
+
+<ul>
+      <div class="row mt-5">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://image.tmdb.org/t/p/original/bQSfsZDaBWZCHI8Z2nrN1hkR6EG.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Tusk</h5>
+                <p class="card-text">When his best friend and podcast co-host goes missing in the backwoods of Canada, a young guy joins forces with his friend's girlfriend to search for him.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://image.tmdb.org/t/p/original/7jEAe21uzbBdb1U5ZJ5jzqm97ad.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">My Stepmother is an Alien</h5>
+                <p class="card-text">Trying to rescue her home planet from destruction, a gorgeous extraterrestrial named Celeste arrives on Earth and begins her scientific research. She woos quirky scientist Dr. Steve Mills, a widower with a young daughter. Before long, Celeste finds herself in love with Steve and her new life on Earth, where she experiences true intimacy for the first time. But when she loses sight of her mission, she begins to question where she belongs.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </ul>
 
 <button class="btn btn-warning"><%= link_to "See Lists", lists_path %></button>
 <button class="btn btn-warning"><%= link_to "Add Bookmark", new_list_bookmark_path(@list) %></button>
 <button class="btn btn-warning"><%= link_to "See All Bookmarks", list_bookmarks_path(@list) %></button>
+</div>

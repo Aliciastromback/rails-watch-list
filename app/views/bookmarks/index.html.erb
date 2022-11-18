@@ -1,3 +1,19 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon px-3">
+  <img alt="alttext" class="logo" src="/assets/film.png" width= 30px height=30px>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/lists">Home</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
 <h1>Bookmarks</h1>
 
 <div class="row my-2">
@@ -14,7 +30,7 @@
               </div>
               <small class="text-right flex-shrink-0">
               <%= link_to 'Delete Bookmark', bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{bookmark.movie.title} from your #{bookmark.list.name} list"}, class: 'text-danger' %></small>
-              <%= link_to 'Go back to all bookmarks', lists_path %>
+              <%= link_to 'Go back to all lists', lists_path %>
             </div>
           </div>
         </div>
